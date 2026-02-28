@@ -1,3 +1,4 @@
+import java.util.Collections;
 import java.util.Scanner;
 
 public class Main {
@@ -31,6 +32,7 @@ public class Main {
 
         System.out.println("-----------------");
         System.out.println("Purchase history: ");
+        Collections.sort(card.getPurchases());
         for (Purchase p : card.getPurchases())  {
             System.out.println(p.getDescription() + " $ " + p.getPrice());
         }
